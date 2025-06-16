@@ -1,0 +1,76 @@
+/* *{
+  overflow-y: hidden;
+} */
+
+.buy-page-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .cart-section {
+    flex: 0.8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 70vh;
+    overflow-y: auto; 
+  }
+  
+  .form-section {
+    flex: 1;
+    background: #242424;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: -1px; /* Moves form slightly upwards */
+  }
+  
+  .form-section form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-section input,
+  .form-section button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-section button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .form-section button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .buy-page-container {
+      flex-direction: column;
+    }
+    .cart-section, .form-section {
+        max-width: 100%;
+      }
+    
+      .cart-section {
+        height: auto;
+        overflow-y: visible; /* Disable scrolling on small screens */
+      }
+    
+      .form-section {
+        top: 0;
+      }
+  }
+  
