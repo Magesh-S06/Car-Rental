@@ -33,17 +33,17 @@ A Car Rental application which helps in buying fancy cars for rent.
    ```
 
 2. Navigate to the project directory:
-   backend:
+   #### Backend:
    ```
    cd 
    ```
-   frontend:
+   #### Frontend:
    ```
    cd react_frontend
    ```
 
 4. Install dependencies:
-   backend/frontend directory:
+   #### Backend/Frontend directory:
    ```
    npm install
    ```
@@ -58,7 +58,7 @@ A Car Rental application which helps in buying fancy cars for rent.
    RAZORPAY_SECRET=your_razorpay_secret
    ```
 
-7. Run the Frontend server:
+7. Run the Development server:
    ```
    npm run dev
    ```
