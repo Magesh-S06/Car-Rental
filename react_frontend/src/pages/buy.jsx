@@ -43,7 +43,7 @@ function Buy(){
               });
         
               const options = {
-                key: "rzp_test_RTT67mmolf8Qca",
+                key: "your_razorpay_key",
                 amount: data.order.amount,
                 currency: data.order.currency,
                 name: "Car Booking",
