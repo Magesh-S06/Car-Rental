@@ -12,7 +12,7 @@ function Navbar(){
     return <nav className="navbar">
         <div className="navbar-brand">
             <Link to="/">
-            Be_Lyke_Ck
+            Clash Cars
             </Link>
         </div>
         <div className="navbar-links">
