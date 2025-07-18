@@ -59,8 +59,19 @@ A Car Rental application which helps in buying fancy cars for rent.
    ```
 
 7. Run the Development server:
+   #### Frontend:
+   ```
+   cd react_frontend
+   ```
+   ```
+   npm run dev
+   ```
+   #### Backend:
+   ```
+   cd backend
+   ```
    ```
    npm run dev
    ```
 
-8. Open [http://localhost:5000](http://localhost:5000) in your browser to see the app.
+9. Open [http://localhost:5000](http://localhost:5000) in your browser to see the app.
