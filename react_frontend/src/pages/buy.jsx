@@ -38,7 +38,7 @@ function Buy(){
 
     
         try {
-            const { data } = await axios.post("http://localhost:5000/api/razorpay/create-order", {
+            const { data } = await axios.post("https://car-rental-y1mj.onrender.com/api/razorpay/create-order", {
                 amount: total,
               });
         

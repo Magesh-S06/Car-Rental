@@ -19,7 +19,7 @@ export const CartProvider = ({children}) => {
             }
             if(isLoggedIn){
                 try {
-                    const res = await axios.get("http://localhost:5000/api/history/cart",{
+                    const res = await axios.get("https://car-rental-y1mj.onrender.com/api/history/cart",{
                         headers: {Authorization: `Bearer ${token}`}
                     })
                     setCart(res.data.data)
@@ -43,7 +43,7 @@ export const CartProvider = ({children}) => {
         if (isLoggedIn) {
             try {
                 const res = await axios.post(
-                    "http://localhost:5000/api/history/cart",
+                    "https://car-rental-y1mj.onrender.com/api/history/cart",
                     { carId: movie._id },
                     { headers: { Authorization: `Bearer ${token}` } }
                 );
@@ -60,7 +60,7 @@ export const CartProvider = ({children}) => {
         if (isLoggedIn) {
             try {
                 const res = await axios.delete(
-                    `http://localhost:5000/api/history/cart/${movieID}`,
+                    `https://car-rental-y1mj.onrender.com/api/history/cart/${movieID}`,
                     { headers: { Authorization: `Bearer ${token}`}}
                 );
                 setCart(res.data.data); 
@@ -94,7 +94,7 @@ export const CartProvider = ({children}) => {
                 // Loop through all items and delete each one
                 await Promise.all(
                     cartIds.map((id) =>
-                        axios.delete(`http://localhost:5000/api/history/cart/${id}`, {
+                        axios.delete(`https://car-rental-y1mj.onrender.com/api/history/cart/${id}`, {
                             headers: { Authorization: `Bearer ${token}` },
                         })
                     )

@@ -15,7 +15,7 @@ export const OrderProvider = ({ children }) => {
       if (!isLoggedIn) return;
 
       try {
-        const res = await axios.get("http://localhost:5000/api/orders", {
+        const res = await axios.get("https://car-rental-y1mj.onrender.com/api/orders", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setOrders(res.data);
@@ -33,13 +33,13 @@ export const OrderProvider = ({ children }) => {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/orders",
+        "https://car-rental-y1mj.onrender.com/api/orders",
         { items },
         {
           headers: { Authorization: `Bearer ${token}` },
         });
       // Refresh orders after placing one
-      const updated = await axios.get("http://localhost:5000/api/orders", {
+      const updated = await axios.get("https://car-rental-y1mj.onrender.com/api/orders", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setOrders(updated.data);
@@ -51,7 +51,7 @@ export const OrderProvider = ({ children }) => {
   // Delete an order
 const deleteOrder = async (orderId) => {
   try {
-    await axios.delete(`http://localhost:5000/api/orders/${orderId}`, {
+    await axios.delete(`https://car-rental-y1mj.onrender.com/api/orders/${orderId}`, {
       headers: { Authorization: `Bearer ${token}` },
     });
 

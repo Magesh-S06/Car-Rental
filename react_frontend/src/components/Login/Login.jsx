@@ -18,7 +18,7 @@ const Login = () =>{
     const handleSubmit = async(e) =>{
         e.preventDefault()
         try {
-            const url = "http://localhost:5000/api/auth"
+            const url = "https://car-rental-y1mj.onrender.com/api/auth"
             const {data: res} = await axios.post(url, data)
             localStorage.setItem("token", res.token)
             window.location="/"

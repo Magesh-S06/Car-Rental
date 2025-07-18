@@ -17,7 +17,7 @@ export const MovieProvider = ({children}) => {
             }
             if(isLoggedIn){
                 try {
-                    const res = await axios.get("http://localhost:5000/api/history/fav",{
+                    const res = await axios.get("https://car-rental-y1mj.onrender.com/api/history/fav",{
                         headers: {Authorization: `Bearer ${token}`}
                     })
                     setFavorites(res.data.data)
@@ -40,7 +40,7 @@ export const MovieProvider = ({children}) => {
             if (isLoggedIn) {
                 try {
                     const res = await axios.post(
-                        "http://localhost:5000/api/history/fav",
+                        "https://car-rental-y1mj.onrender.com/api/history/fav",
                         { carId: movie._id },
                         { headers: { Authorization: `Bearer ${token}` } }
                     );
@@ -57,7 +57,7 @@ export const MovieProvider = ({children}) => {
         if (isLoggedIn) {
             try {
                 const res = await axios.delete(
-                    `http://localhost:5000/api/history/fav/${movieID}`,
+                    `https://car-rental-y1mj.onrender.com/api/history/fav/${movieID}`,
                     { headers: { Authorization: `Bearer ${token}` } }
                 );
                 setFavorites(res.data.data); 

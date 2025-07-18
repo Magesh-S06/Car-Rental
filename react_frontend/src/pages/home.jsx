@@ -14,7 +14,7 @@ function Home(){
     useEffect(() =>{
         const fetchCars = async () =>{
             try{
-                const res = await axios.get("http://localhost:5000/api/cardata")
+                const res = await axios.get("https://car-rental-y1mj.onrender.com/api/cardata")
                 setCars(res.data.data)
                 setAllCars(res.data.data)
                 setError(null)
