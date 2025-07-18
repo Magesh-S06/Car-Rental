@@ -29,7 +29,7 @@ A Car Rental application which helps in buying fancy cars for rent.
 
 1. Clone the repository:
    ```
-   git clone https://github.com/daniel1kp/pantry-pro.git
+   git clone https://github.com/Magesh-S06/Car-Rental.git
    ```
 
 2. Navigate to the project directory:
