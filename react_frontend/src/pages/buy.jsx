@@ -43,7 +43,8 @@ function Buy(){
               });
         
               const options = {
-                key: "rzp_test_RTT67mmolf8Qca",
+                // key: "rzp_test_RTT67mmolf8Qca",
+                key: import.meta.env.VITE_RAZORPAY_KEY,
                 amount: data.order.amount,
                 currency: data.order.currency,
                 name: "Car Booking",
