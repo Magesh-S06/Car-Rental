@@ -66,10 +66,7 @@ function Buy(){
         
               const paymentObject = new window.Razorpay(options);
               paymentObject.open();
-            // await placeOrder(movieToShow.map((movie)=> movie._id || movie.id))
-            // alert("Purchase successful")
-            // await clearCart()
-            // navigate("/order")
+            
         } catch (err) {
             console.error("Purchase Failed",err)
             alert("Something went wrong during purchase.")
